@@ -35,4 +35,14 @@ public class Bed {
     public int getQuilt() {
         return quilt;
     }
+    @Override
+    public String toString() {
+        return "Bed{" +
+                "style='" + style + '\'' +
+                ", pillows=" + pillows +
+                ", height=" + height +
+                ", sheets=" + sheets +
+                ", quilts=" + quilt +
+                '}';
+    }
 }

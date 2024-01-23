@@ -38,4 +38,14 @@ public class Wardrobe {
     public void add() {
         System.out.println("Wardrobe added into Bedroom");
     }
+
+    @Override
+    public String toString() {
+        return "Wardrobe{" +
+                "width=" + width +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
+    }
 }
+

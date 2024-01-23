@@ -1,5 +1,7 @@
 package model;
 
+import enums.LampType;
+
 public class Lamp {
     // private instance variables
     private final LampType style;
@@ -26,5 +28,13 @@ public class Lamp {
 
     public int getGlobRating(){
         return this.globRating;
+    }
+    @Override
+    public String toString() {
+        return "Lamp{" +
+                "style=" + style +
+                ", battery=" + battery +
+                ", globRating=" + globRating +
+                '}';
     }
 }

@@ -1,5 +1,7 @@
 package model;
 
+import enums.PaintColor;
+
 public class Ceiling {
     private int height;
     private PaintColor paintedColor;
@@ -19,5 +21,13 @@ public class Ceiling {
 
     public void create() {
         System.out.println("Ceiling height: " + height + " and painted color: " + paintedColor);
+    }
+
+    @Override
+    public String toString() {
+        return "Ceiling{" +
+                "height=" + height +
+                ", paintedColor=" + paintedColor +
+                '}';
     }
 }
